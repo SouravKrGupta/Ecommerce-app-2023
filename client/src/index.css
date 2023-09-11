@@ -61,11 +61,7 @@
     #000000
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #434343, #000000);
-position: fixed;
-bottom: 0;
-width: 100%;
-left: 0;
-text-align: center;
+
 }
 
 .footer a {
