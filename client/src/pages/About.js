@@ -3,23 +3,22 @@ import Layout from "./../components/Layout/Layout";
 
 const About = () => {
   return (
-    <Layout title={"About us - Ecommer app"} >
-      <div className="row contactus ">
-        <div className="col-md-4 ">
+    <Layout title={"About us - Ecommer app"}>
+      <div className="row contactus info-page">
+        <div className="col-md-5">
           <img
             src="/images/about.jpeg"
-            alt="contactus"
-            style={{ width: "100%" }}
+            alt="about us"
+            className="info-page-image"
           />
         </div>
-        <div className="col-md-4 mt-5">
-          <div className="scrollable-text">
-            <p className="text-justify mt-5">
+        <div className="col-md-7 mt-5">
+          <div className="info-page-card scrollable-text">
+            <p className="text-justify">
               Welcome to Ecommerce App, your one-stop destination for all your
               shopping needs. We are passionate about providing you with a
               convenient and enjoyable online shopping experience.
             </p>
-
             <h2>Our Mission</h2>
             <p className="text-justify mt-2">
               At Ecommerce App, our mission is to make shopping easy,
@@ -36,7 +35,6 @@ const About = () => {
               individuals who ensure that your shopping journey is smooth and
               enjoyable.
             </p>
-           
           </div>
         </div>
       </div>

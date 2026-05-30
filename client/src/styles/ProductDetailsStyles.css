@@ -1,50 +1,102 @@
 .product-details {
-  margin-top: 100px !important;
+  margin-top: 0 !important;
+  padding: 2rem 1rem;
+  align-items: center;
+  row-gap: 1.5rem;
 }
 
 .product-details-info {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
+  background: var(--surface);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: 2rem;
 }
 
 .product-details-info h6 {
   margin-bottom: 20px !important;
+  color: var(--muted);
+}
+
+.product-details-image {
+  width: 100%;
+  max-width: 520px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+.similar-products {
+  padding: 0 1rem 4rem;
+  row-gap: 1rem;
+}
+
+.similar-products h4 {
+  font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 1rem;
 }
 
 .similar-products .card {
-  background-color: rgba(128, 128, 128, 0.097);
-  width: 18rem;
+  background: var(--surface);
+  width: min(100%, 18.5rem);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
 }
 
 .similar-products .card-name-price {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  gap: 0.75rem;
 }
 
 .similar-products .card-price {
-  color: green;
+  color: var(--accent-dark);
   font-weight: bold;
 }
+
 .similar-products button {
-  border-radius: 0;
+  border-radius: 999px;
   width: 100%;
-  border-top-left-radius: 5px;
-  border-bottom-right-radius: 5px;
   font-size: 14px;
   font-weight: bold;
+  padding: 0.75rem 1rem;
 }
 
 .similar-products .card-text {
-  color: rgb(90, 89, 89);
+  color: var(--muted);
 }
 
 .similar-products .card img:hover {
-  transform: scale(0.9);
+  transform: scale(1.04);
 }
 
 .similar-products .card-img-top {
   height: 300px !important;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+@media (max-width: 767px) {
+  .product-details,
+  .similar-products {
+    padding-inline: 0.75rem;
+  }
+
+  .product-details-image {
+    height: 300px;
+  }
+
+  .similar-products .card {
+    width: 100%;
+    margin-inline: 0 !important;
+  }
+
+  .similar-products .card-name-price {
+    flex-direction: column;
+  }
 }
